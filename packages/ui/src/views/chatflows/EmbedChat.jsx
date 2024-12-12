@@ -170,8 +170,8 @@ export const defaultThemeConfig = {
         footer: {
             textColor: '#303235',
             text: 'Powered by',
-            company: 'Flowise',
-            companyLink: 'https://flowiseai.com'
+            company: 'VaxBot',
+            companyLink: 'https://vaxcalc.org/tag/vaxbot/'
         }
     }
 }
@@ -223,10 +223,10 @@ const App = () => {
                 /* Observers Config */
             }}
             theme={{${customStringify(defaultThemeConfig)
-                .substring(1)
-                .split('\n')
-                .map((line) => ' '.repeat(4) + line)
-                .join('\n')}
+            .substring(1)
+            .split('\n')
+            .map((line) => ' '.repeat(4) + line)
+            .join('\n')}
         />
     )
 }`
@@ -276,10 +276,10 @@ const App = () => {
                 /* Observers Config */
             }}
             theme={{${customStringify(getFullPageThemeConfig())
-                .substring(1)
-                .split('\n')
-                .map((line) => ' '.repeat(4) + line)
-                .join('\n')}
+            .substring(1)
+            .split('\n')
+            .map((line) => ' '.repeat(4) + line)
+            .join('\n')}
         />
     )
 }`
